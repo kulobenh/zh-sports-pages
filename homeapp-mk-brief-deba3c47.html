@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK体育 · 从介绍开始</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #fafaf9;
+            color: #1e1e1e;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .page {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 5rem;
+        }
+        /* hero 开场短句 */
+        .hero {
+            margin-bottom: 3rem;
+            border-left: 3px solid #1e3a5f;
+            padding-left: 1.5rem;
+        }
+        .hero .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #6f6f6f;
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            color: #111;
+        }
+        .hero h1 i {
+            font-style: normal;
+            color: #1e3a5f;
+        }
+        .hero .lead {
+            margin-top: 1rem;
+            font-size: 1.05rem;
+            color: #2e2e2e;
+            max-width: 90%;
+        }
+        /* 承接段落 */
+        .intro {
+            margin-bottom: 2.8rem;
+        }
+        .intro p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #2c2c2c;
+        }
+        .intro p a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+        .intro p a:hover {
+            border-bottom-color: #1e3a5f;
+        }
+        /* 特点列表 */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem 2.2rem;
+            margin: 3.2rem 0 3rem;
+            border-top: 1px solid #e5e5e5;
+            padding-top: 2.8rem;
+        }
+        .feature-item {
+            break-inside: avoid;
+        }
+        .feature-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.3rem;
+            color: #111;
+        }
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e5e5;
+            font-size: 0.95rem;
+            color: #3a3a3a;
+        }
+        .closing p {
+            margin-bottom: 0.6rem;
+        }
+        .closing .small-note {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 1rem;
+        }
+        /* 响应式细节 */
+        @media (max-width: 550px) {
+            .page { padding: 2.5rem 1.2rem 4rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .hero .lead { font-size: 0.95rem; max-width: 100%; }
+            .features { grid-template-columns: 1fr; gap: 1.5rem; }
+            .feature-item h3 { font-size: 1rem; }
+        }
+        @media (min-width: 551px) and (max-width: 720px) {
+            .page { padding: 3rem 2rem 4.5rem; }
+            .hero h1 { font-size: 1.9rem; }
+            .features { gap: 1.6rem 1.8rem; }
+        }
+        /* 极简选择 */
+        hr { border: none; border-top: 1px solid #ececec; margin: 2.4rem 0; }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 开场短句 -->
+    <div class="hero">
+        <div class="tag">站点轮廓</div>
+        <h1>关于 <i>MK体育</i>，<br>一次简要的介绍</h1>
+        <p class="lead">一个提供体育资讯与赛事相关内容的平台。<br>下文从站点定位与可信认知的角度展开叙述。</p>
+    </div>
+
+    <!-- 承接段落 · 从介绍与可信说明展开 -->
+    <div class="intro">
+        <p>
+            在众多体育内容站点中，<a href="https://homeapp-mk.com">MK体育</a> 定位相对清晰——它围绕体育赛事、运动资讯与相关动态构建信息聚合。站点界面以实用为导向，内容覆盖足球、篮球、网球等多个主流项目。对于经常关注赛事进展、想要集中获取体育信息的用户而言，它提供了一个可浏览的起点。
+        </p>
+        <p>
+            从可信度角度看，该平台在页面中明确公示了运营主体与联系方式，并保持了内容更新的连续性。基本信息透明、结构可追溯，是判断一个体育信息站点是否可靠的基础指标。整体而言，它更接近一个以内容聚合和信息展示为核心的体育垂直网站，而非社交或互动社区。
+        </p>
+    </div>
+
+    <!-- 特点列表（四个特征，简洁克制） -->
+    <div class="features">
+        <div class="feature-item">
+            <h3>多项目覆盖</h3>
+            <p>足球、篮球、网球、电竞等主流运动项目均有专门栏目，信息维度较广。</p>
+        </div>
+        <div class="feature-item">
+            <h3>赛事资讯聚合</h3>
+            <p>以图文形式整合近期赛事结果、赛前分析与球员动态，减少跨平台搜集成本。</p>
+        </div>
+        <div class="feature-item">
+            <h3>界面信息密度适中</h3>
+            <p>页面布局以列表与卡片为主，标题突出，便于快速浏览当日要点。</p>
+        </div>
+        <div class="feature-item">
+            <h3>运营信息可查</h3>
+            <p>网站底部保留联系渠道与备案说明，为内容可信度提供基础支撑。</p>
+        </div>
+    </div>
+
+    <!-- 温和结尾 + 场景提示 + FAQ 摘要风格 -->
+    <div class="closing">
+        <p><strong>常见疑问摘要</strong> —— 该站点是否提供直播源？根据页面导航判断，<a href="https://homeapp-mk.com">MK体育</a> 以资讯聚合为主，并未直接嵌入直播流。其核心价值在于赛前信息整理与赛后内容回顾，适合作为信息参考渠道之一。</p>
+        <p>此外，平台对部分热门赛事会提供深度战术分析或数据统计图，内容组织相对规整。对于希望快速了解比赛背景或回顾关键事件的用户，有一定实用性。</p>
+        <p class="small-note">以上介绍基于公开页面内容与站点结构观察，不构成推荐或背书。建议用户根据自身需求浏览判断。</p>
+    </div>
+
+    <!-- 极简分割，提示性文字（不抢眼） -->
+    <hr>
+    <div style="font-size:0.75rem; color:#999; text-align:right; margin-top:-0.5rem;">首页 · 叙述版</div>
+</div>
+</body>
+</html>
